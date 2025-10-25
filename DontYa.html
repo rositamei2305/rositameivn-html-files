@@ -27,8 +27,12 @@
 <div class="overlay"></div>
 <div class="content">
 <h1>INFINITY FLOW - Rosita Mei x ZillM ft. McE</h1>
-<iframe id="player" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/iGjjSy3KrNqDbYObXU&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false"></iframe>
+
+<!-- Thay iframe cũ bằng iframe nhúng hợp lệ từ SoundCloud -->
+<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2193504967&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+</iframe>
+
 <div id="message">🎧 Nghe ít nhất <strong>20 giây</strong> để mở khóa tải xuống🎧</div>
 <div id="countdown">20</div>
 <a id="download" href="https://drive.google.com/file/d/1N7yguZ2BiKSvMLc3SpmDNI7elhnT2_xz/view?usp=sharing" target="_blank">
@@ -40,7 +44,7 @@ Tải xuống ngay
 </footer>
 <script src="https://w.soundcloud.com/player/api.js"></script>
 <script>
-const iframe = document.getElementById("player");
+const iframe = document.querySelector("iframe");
 const countdown = document.getElementById("countdown");
 const download = document.getElementById("download");
 const message = document.getElementById("message");
